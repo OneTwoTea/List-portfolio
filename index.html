@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>List Project Portfolio — MC Templates</title>
+  <meta name="description" content="Bộ sưu tập 6 giao diện website portfolio cho MC sự kiện, mỗi mẫu một phong cách riêng.">
+  <meta name="theme-color" content="#EEEAE2">
+
+  <!-- Bật hiệu ứng chỉ khi có JavaScript (không JS thì chữ hiện sẵn) -->
+  <script>document.documentElement.classList.add('js')</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Unbounded + Inter: font của trang này. Các font còn lại chỉ dùng để xem trước font của từng mẫu -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Inter:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@1,600&family=Plus+Jakarta+Sans:wght@800&family=Big+Shoulders+Display:wght@800&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ HERO: chữ chạy từ 2 bên vào giữa ============ -->
+  <header class="hero" id="top">
+    <div class="hero__bar wrap">
+      <span>MC Portfolio</span>
+      <span><span class="hide-sm">Template Collection · </span>2026</span>
+    </div>
+
+    <div class="hero__center wrap">
+      <h1 class="title">
+        <span class="sr-only">List Project Portfolio</span>
+        <span class="title__lines" aria-hidden="true">
+          <span class="title__line" data-from="left">List</span>
+          <span class="title__line" data-from="right">Project</span>
+          <span class="title__line title__line--accent" data-from="left">Portfolio</span>
+        </span>
+      </h1>
+
+      <p class="hero__lead fade-after">
+        Bộ sưu tập <strong>6 giao diện website</strong> cho MC sự kiện.
+        Cùng một nội dung, sáu phong cách khác nhau. Chọn một mẫu và mở xem trực tiếp.
+      </p>
+
+      <a class="hero__cue fade-after" href="#projects">
+        Xem danh sách
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v16m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <!-- Dải chữ chạy ngang: nội dung lặp 2 lần để vòng lặp liền mạch -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Burgundy Classic</span><i>✦</i><span>Pastel Light</span><i>✦</i><span>Paper Pop</span><i>✦</i><span>Spotlight</span><i>✦</i><span>Video Text Mask</span><i>✦</i><span>Xenon Follow-Spot</span><i>✦</i>
+        <span>Burgundy Classic</span><i>✦</i><span>Pastel Light</span><i>✦</i><span>Paper Pop</span><i>✦</i><span>Spotlight</span><i>✦</i><span>Video Text Mask</span><i>✦</i><span>Xenon Follow-Spot</span><i>✦</i>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ DANH SÁCH DỰ ÁN ============ -->
+  <main class="projects wrap" id="projects">
+    <div class="projects__head">
+      <p class="eyebrow">Danh sách dự án</p>
+      <h2>6 giao diện,<br>1 bộ nội dung MC</h2>
+      <p class="projects__note">Bấm vào thẻ để mở trang mẫu trong tab mới.</p>
+    </div>
+
+    <!--
+      Thêm mẫu mới: copy một khối <li class="card"> … </li>, rồi sửa
+      - style="--tpl-bg / --tpl-fg / --tpl-font": màu nền, màu chữ "Aa" và font của mẫu
+      - href: link GitHub Pages của mẫu
+      - số thứ tự, tên, mô tả, 3 ô màu
+    -->
+    <ol class="grid">
+
+      <li class="card reveal" style="--tpl-bg:#3A0D1E; --tpl-fg:#F6E3A8; --tpl-font:'Bricolage Grotesque', sans-serif;">
+        <a class="card__link" href="https://onetwotea.github.io/mc-portfolio-main/" target="_blank" rel="noopener">
+          <div class="card__preview">
+            <span class="card__no">01</span>
+            <span class="card__aa">Aa</span>
+            <span class="card__style">Burgundy Classic</span>
+            <span class="card__swatches"><i style="background:#3A0D1E"></i><i style="background:#F6E3A8"></i><i style="background:#C9707F"></i></span>
+          </div>
+          <div class="card__body">
+            <p class="card__meta">Temp_main · Bản gốc</p>
+            <h3 class="card__title">Burgundy Classic</h3>
+            <p class="card__desc">Bản gốc của bộ template. Nền đỏ rượu vang sang trọng, tiêu đề vàng kem, điểm nhấn hồng phấn.</p>
+            <p class="card__fonts">Bricolage Grotesque · Be Vietnam Pro</p>
+            <span class="card__cta">Xem trang <b aria-hidden="true">→</b></span>
+          </div>
+        </a>
+      </li>
+
+      <li class="card reveal" style="--tpl-bg:linear-gradient(135deg,#ece3f4,#fbf8fd); --tpl-fg:#6b2f8f; --tpl-font:system-ui, 'Segoe UI', sans-serif;">
+        <a class="card__link" href="https://onetwotea.github.io/mc-portfolio-temp1/" target="_blank" rel="noopener">
+          <div class="card__preview">
+            <span class="card__no">02</span>
+            <span class="card__aa">Aa</span>
+            <span class="card__style">Pastel Light</span>
+            <span class="card__swatches"><i style="background:#fbf8fd"></i><i style="background:#6b2f8f"></i><i style="background:#1f1a2e"></i></span>
+          </div>
+          <div class="card__body">
+            <p class="card__meta">Temp1</p>
+            <h3 class="card__title">Pastel Light</h3>
+            <p class="card__desc">Nền sáng pastel, chữ tím than, điểm nhấn tím đậm. Nhẹ nhàng, hợp MC tiệc cưới và sự kiện thân mật.</p>
+            <p class="card__fonts">Font hệ thống (system-ui)</p>
+            <span class="card__cta">Xem trang <b aria-hidden="true">→</b></span>
+          </div>
+        </a>
+      </li>
+
+      <li class="card reveal" style="--tpl-bg:#fbf8f4; --tpl-fg:#b8366f; --tpl-font:'Montserrat', sans-serif;">
+        <a class="card__link" href="https://onetwotea.github.io/mc-portfolio-temp2/" target="_blank" rel="noopener">
+          <div class="card__preview">
+            <span class="card__no">03</span>
+            <span class="card__aa">Aa</span>
+            <span class="card__style">Paper Pop</span>
+            <span class="card__swatches"><i style="background:#b8366f"></i><i style="background:#6a3fd0"></i><i style="background:#b4501c"></i></span>
+          </div>
+          <div class="card__body">
+            <p class="card__meta">Temp2 · Mobile-first</p>
+            <h3 class="card__title">Paper Pop</h3>
+            <p class="card__desc">Nền giấy kem, chữ tím than đậm, điểm nhấn hồng – tím – cam cùng các mảng pastel. Nút có ánh sáng lướt và gợn sóng khi chạm.</p>
+            <p class="card__fonts">Montserrat</p>
+            <span class="card__cta">Xem trang <b aria-hidden="true">→</b></span>
+          </div>
+        </a>
+      </li>
+
+      <li class="card reveal" style="--tpl-bg:radial-gradient(circle at 30% 25%,#104E42,#050F0E 70%); --tpl-fg:#E2B45C; --tpl-font:'Playfair Display', serif; --tpl-style:italic;">
+        <a class="card__link" href="https://onetwotea.github.io/mc-portfolio-temp3/" target="_blank" rel="noopener">
+          <div class="card__preview">
+            <span class="card__no">04</span>
+            <span class="card__aa">Aa</span>
+            <span class="card__style">Spotlight</span>
+            <span class="card__swatches"><i style="background:#050F0E"></i><i style="background:#104E42"></i><i style="background:#E2B45C"></i></span>
+          </div>
+          <div class="card__body">
+            <p class="card__meta">Temp3</p>
+            <h3 class="card__title">Spotlight</h3>
+            <p class="card__desc">Sân khấu nhung đen ánh lục bảo, điểm nhấn vàng champagne. Luồng sáng bám theo ngón tay hoặc con trỏ để soi rõ chân dung MC.</p>
+            <p class="card__fonts">Playfair Display · Be Vietnam Pro</p>
+            <span class="card__cta">Xem trang <b aria-hidden="true">→</b></span>
+          </div>
+        </a>
+      </li>
+
+      <li class="card reveal" style="--tpl-bg:#060A14; --tpl-fg:#D4AF37; --tpl-font:'Plus Jakarta Sans', sans-serif;">
+        <a class="card__link" href="https://onetwotea.github.io/mc-portfolio-temp4/" target="_blank" rel="noopener">
+          <div class="card__preview">
+            <span class="card__no">05</span>
+            <span class="card__aa">Aa</span>
+            <span class="card__style">Video Text Mask</span>
+            <span class="card__swatches"><i style="background:#060A14"></i><i style="background:#F4F1EA"></i><i style="background:#D4AF37"></i></span>
+          </div>
+          <div class="card__body">
+            <p class="card__meta">Temp4</p>
+            <h3 class="card__title">Video Text Mask</h3>
+            <p class="card__desc">Chữ khổng lồ trong suốt để lộ video showreel phía sau. Nền mực tối xen giấy ngà, điểm nhấn vàng ánh kim.</p>
+            <p class="card__fonts">Plus Jakarta Sans</p>
+            <span class="card__cta">Xem trang <b aria-hidden="true">→</b></span>
+          </div>
+        </a>
+      </li>
+
+      <li class="card reveal" style="--tpl-bg:radial-gradient(circle at 75% 15%,#1B2A3D,#07090D 65%); --tpl-fg:#8FC8FF; --tpl-font:'Big Shoulders Display', sans-serif;">
+        <a class="card__link" href="https://onetwotea.github.io/mc-portfolio-temp5/" target="_blank" rel="noopener">
+          <div class="card__preview">
+            <span class="card__no">06</span>
+            <span class="card__aa">Aa</span>
+            <span class="card__style">Xenon Follow-Spot</span>
+            <span class="card__swatches"><i style="background:#07090D"></i><i style="background:#EEF2F7"></i><i style="background:#8FC8FF"></i></span>
+          </div>
+          <div class="card__body">
+            <p class="card__meta">Temp5</p>
+            <h3 class="card__title">Xenon Follow-Spot</h3>
+            <p class="card__desc">Khán phòng tắt đèn, đèn follow-spot xanh băng chiếu từ giàn đèn, bám theo người xem rồi soi sáng tên MC.</p>
+            <p class="card__fonts">Big Shoulders Display · Lexend</p>
+            <span class="card__cta">Xem trang <b aria-hidden="true">→</b></span>
+          </div>
+        </a>
+      </li>
+
+    </ol>
+  </main>
+
+  <footer class="footer wrap">
+    <span>© 2026 OneTwoTea</span>
+    <a href="https://github.com/OneTwoTea" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="#top">Lên đầu trang ↑</a>
+  </footer>
+
+</body>
+</html>
