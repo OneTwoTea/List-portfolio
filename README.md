@@ -20,7 +20,8 @@ Mở trực tiếp file `index.html` bằng trình duyệt.
 Trong `index.html`, copy một khối `<li class="card"> … </li>` rồi sửa:
 
 - `--tpl-bg`, `--tpl-fg`, `--tpl-font`: nền, màu chữ "Aa" và font của mẫu (font phải có trong link Google Fonts ở `<head>`)
-- `href`: link GitHub Pages của mẫu
+- `href` của `.card__link`: link GitHub Pages của mẫu
+- `href` của `.card__repo`: link repo GitHub của mẫu (để tải source), và tên mẫu trong `<span class="sr-only">`
 - số thứ tự, tên, mô tả, 3 ô màu `<i style="background:…">`
 
 Nhớ thêm tên mẫu vào dải chữ chạy ngang (`.ticker__track`, 2 lần).
@@ -47,6 +48,8 @@ Hướng bay của mỗi dòng đặt bằng `data-from="left"` / `data-from="ri
 | 6 | `Temp6` | Prism Aurora | [mc-portfolio-temp6](https://github.com/OneTwoTea/mc-portfolio-temp6) | [Xem](https://onetwotea.github.io/mc-portfolio-temp6/) |
 | 7 | `Temp7` | Bento Board | [mc-portfolio-temp7](https://github.com/OneTwoTea/mc-portfolio-temp7) | [Xem](https://onetwotea.github.io/mc-portfolio-temp7/) |
 | 8 | `Temp8` | Thiệp Mời | [mc-portfolio-temp8](https://github.com/OneTwoTea/mc-portfolio-temp8) | [Xem](https://onetwotea.github.io/mc-portfolio-temp8/) |
+| 9 | `Temp9` | Rundown | [mc-portfolio-temp9](https://github.com/OneTwoTea/mc-portfolio-temp9) | [Xem](https://onetwotea.github.io/mc-portfolio-temp9/) |
+| 10 | `Temp10` | Bàn Đặt Lịch | [mc-portfolio-temp10](https://github.com/OneTwoTea/mc-portfolio-temp10) | [Xem](https://onetwotea.github.io/mc-portfolio-temp10/) |
 
 ### Deploy một mẫu mới (`TempN`)
 

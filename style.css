@@ -298,6 +298,8 @@ a { color: inherit; }
 
 /* --- Thẻ --- */
 .card {
+  display: flex;
+  flex-direction: column;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -306,9 +308,9 @@ a { color: inherit; }
 }
 
 .card__link {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
   text-decoration: none;
 }
 
@@ -429,6 +431,29 @@ a { color: inherit; }
   }
   .card:hover .card__aa { transform: scale(1.08); }
   .card:hover .card__cta b { transform: translateX(6px); }
+}
+
+/* --- Link tải source (repo GitHub), nằm ngoài link chính của thẻ --- */
+.card__repo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.card__repo b { margin-left: auto; font-weight: 500; transition: transform 0.3s var(--ease-out); }
+
+.card__repo:focus-visible { outline-offset: -3px; border-radius: 0 0 var(--radius) var(--radius); }
+
+@media (hover: hover) {
+  .card__repo:hover { background: var(--ink); color: var(--bg); }
+  .card__repo:hover b { transform: translate(3px, -3px); }
 }
 
 /* Hiện dần khi cuộn tới */
